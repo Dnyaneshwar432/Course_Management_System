@@ -1,0 +1,107 @@
+User APIs
+Get All Users
+Endpoint: GET /api/admins/users
+Description: Retrieves a list of all users.
+Response: List<UserDTO>
+Admin APIs
+Create Admin
+
+Endpoint: POST /api/admins
+Description: Creates a new admin.
+Request Body: AdminDTO
+Response: AdminResponseDTO
+Get All Admins
+
+Endpoint: GET /api/admins
+Description: Retrieves a list of all admins.
+Response: List<AdminResponseDTO>
+Get Admin By ID
+
+Endpoint: GET /api/admins/getadmin/{id}
+Description: Retrieves an admin by their ID.
+Path Variable: id
+Response: AdminResponseDTO
+Update Admin
+
+Endpoint: PUT /api/admins/update/admin/{id}
+Description: Updates an existing admin.
+Path Variable: id
+Request Body: AdminDTO
+Response: AdminResponseDTO
+Delete Admin
+
+Endpoint: DELETE /api/admins/delete/admin/{id}
+Description: Deletes an admin by their ID.
+Path Variable: id
+Response: Void
+Teacher APIs
+Create Teacher
+
+Endpoint: POST /api/admins/create/teachers
+Description: Creates a new teacher.
+Request Body: TeacherDTO
+Response: TeacherResponseDTO or ErrorResponseDTO
+Delete Teacher
+
+Endpoint: DELETE /api/admins/delete/teacher/{teacherId}
+Description: Deletes a teacher by their ID.
+Path Variable: teacherId
+Response: Void
+Update Teacher
+
+Endpoint: PUT /api/admins/update/teacher/{teacherId}
+Description: Updates an existing teacher.
+Path Variable: teacherId
+Request Body: TeacherDTO
+Response: TeacherDTO
+Student APIs
+Create Student
+
+Endpoint: POST /api/admins/create/students
+Description: Creates a new student.
+Request Body: StudentDTO
+Response: StudentResponseDTO or ErrorResponseDTO
+Update Student
+
+Endpoint: PUT /api/admins/update/student/{studentId}
+Description: Updates an existing student.
+Path Variable: studentId
+Request Body: StudentDTO
+Response: StudentDTO
+Delete Student
+
+Endpoint: DELETE /api/admins/deleteStudent
+Description: Deletes the current student.
+Response: String
+Course APIs
+Create Course
+
+Endpoint: POST /api/admins/create/courses
+Description: Creates a new course.
+Request Body: CourseDTO
+Response: CourseDTO
+Get Course By ID
+
+Endpoint: GET /api/admins/getcourses/{id}
+Description: Retrieves a course by its ID.
+Path Variable: id
+Response: CourseResponseDTO
+Update Course
+
+Endpoint: PUT /api/admins/update/courses/{id}
+Description: Updates an existing course.
+Path Variable: id
+Request Body: CourseDTO
+Response: CourseResponseDTO
+Delete Course
+
+Endpoint: DELETE /api/admins/delete/courses/{id}
+Description: Deletes a course by its ID.
+Path Variable: id
+Response: CourseResponseDTO
+Assign Teacher to Course
+
+Endpoint: PUT /api/admins/courses/{courseId}/assign-teacher/{teacherId}
+Description: Assigns a teacher to a course.
+Path Variables: courseId, teacherId
+Response: CourseResponseDTO
